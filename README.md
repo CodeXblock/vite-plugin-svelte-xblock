@@ -34,7 +34,7 @@ In essence, Svelte Xblock allows you to organize your code more cleanly without 
 ## Installation
 
 ```bash
-npm install --save-dev
+npm i vite-plugin-svelte-xblock --save-dev
 ```
 
 ## Usage
