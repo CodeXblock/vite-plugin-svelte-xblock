@@ -1,0 +1,21 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

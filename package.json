@@ -1,0 +1,46 @@
+{
+  "name": "vite-plugin-svelte-xblock",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Qianhe Chen",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild && npm run patch-cjs",
+    "patch-cjs": "tsx ./scripts/patchCJS.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeXblock/vite-plugin-svelte-xblock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CodeXblock/vite-plugin-svelte-xblock/issues"
+  },
+  "homepage": "https://github.com/CodeXblock/vite-plugin-svelte-xblock#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "tslib": "^2.6.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vite": "^5.3.1"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0"
+  }
+}
